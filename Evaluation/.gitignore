@@ -1,3 +1,0 @@
-__pycache__
-utils/keys/*
-!utils/keys/get_keys.py
