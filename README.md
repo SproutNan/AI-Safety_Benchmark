@@ -1,3 +1,3 @@
 # GuidedBench
 
-This is the repository for the GuidedBench.
+This is the homepage repository for the GuidedBench.
