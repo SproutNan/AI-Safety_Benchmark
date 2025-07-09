@@ -2,3 +2,4 @@ __pycache__
 Evaluation/utils/keys/*
 !Evaluation/utils/keys/get_keys.py
 .DS_Store
+.env
