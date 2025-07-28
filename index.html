@@ -6,7 +6,7 @@
     <meta name="description" content="Equipping Jailbreak Evaluation with Guidelines">
     <meta name="keywords" content="GuidedBench, Jailbreak, Evaluation">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GuidedBench: Equipping Jailbreak Evaluation with Guidelines</title>
+    <title>GuidedBench: Measuring and Mitigating the Evaluation Discrepancies of In-the-wild LLM Jailbreak Methods</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -66,8 +66,7 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-1 publication-title">GuidedBench: Equipping Jailbreak Evaluation with
-                            Guidelines</h1>
+                        <h1 class="title is-1 publication-title">GuidedBench: Measuring and Mitigating the Evaluation Discrepancies of In-the-wild LLM Jailbreak Methods</h1>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
                                 <a href="https://sproutnan.github.io">Ruixuan Huang</a>,</span>
@@ -145,20 +144,7 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            Jailbreaking methods for large language models (LLMs) have gained increasing attention for
-                            building safe and responsible AI systems. After analyzing 35 jailbreak methods across six
-                            categories, we find that existing benchmarks, relying on universal LLM-based or
-                            keyword-matching scores, lack case-specific criteria, leading to conflicting results. </p>
-                        <p>
-                            In this paper, we introduce a more robust evaluation framework for jailbreak methods, with a
-                            curated harmful question dataset, detailed case-by-case evaluation guidelines, and a scoring
-                            system equipped with these guidelines. Our experiments show that existing jailbreak methods
-                            exhibit better discrimination when evaluated using our benchmark. Some jailbreak methods
-                            that claim to achieve over 90% attack success rate (ASR) on other benchmarks only reach a
-                            maximum of 30.2% on our benchmark, providing a higher ceiling for more advanced jailbreak
-                            research; furthermore, using our scoring system reduces the variance of disagreements
-                            between different evaluator LLMs by up to 76.33%. This demonstrates its ability to provide
-                            more fair and stable evaluation.
+                            Despite the growing interest in jailbreak methods as an effective red-teaming tool for building safe and responsible large language models (LLMs), flawed evaluation system designs have led to significant discrepancies in their effectiveness assessments. We conduct a systematic measurement study based on 37 jailbreak studies since 2022, focusing on both the methods and the evaluation systems they employ. We find that existing evaluation systems lack case-specific criteria, resulting in misleading conclusions about their effectiveness and safety implications. This paper advocates a shift to a more nuanced, case-by-case evaluation paradigm. We introduce GuidedBench, a novel benchmark comprising a curated harmful question dataset, detailed case-by-case evaluation guidelines and an evaluation system integrated with these guidelines -- GuidedEval. Experiments demonstrate that GuidedBench offers more accurate measurements of jailbreak performance, enabling meaningful comparisons across methods and uncovering new insights overlooked in previous evaluations. GuidedEval reduces inter-evaluator variance by at least 76.03%. Furthermore, we observe that incorporating guidelines can enhance the effectiveness of jailbreak methods themselves, offering new insights into both attack strategies and evaluation paradigms. </p>
                         </p>
                     </div>
                 </div>
