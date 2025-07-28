@@ -13,10 +13,10 @@
 
 </div>
 
-This is the code for our paper *<strong>GuidedBench: Equipping Jailbreak Evaluation with Guidelines</strong>*.
+This is the code for our paper *<strong>GuidedBench: Measuring and Mitigating the Evaluation Discrepancies of In-the-wild LLM Jailbreak Methods</strong>*.
 
 ## News
-
+- [2025-07-09] The v2 paper is available on arXiv.
 - [2025-02-26] The demo code for evaluation is released.
 - [2025-02-25] The paper is available on arXiv.
 
@@ -26,7 +26,7 @@ If you find this work helpful, please consider citing our paper:
 
 ```bibtex
 @article{huang2025guidedbench,
-  title   = {GuidedBench: Equipping Jailbreak Evaluation with Guidelines},
+  title   = {GuidedBench: Measuring and Mitigating the Evaluation Discrepancies of In-the-wild LLM Jailbreak Methods},
   author  = {Ruixuan Huang and Xunguang Wang and Zongjie Li and Daoyuan Wu and Shuai Wang},
   year    = {2025},
   journal = {arXiv preprint arXiv: 2502.16903}
