@@ -1,5 +1,10 @@
 __pycache__
-Evaluation/utils/keys/*
-!Evaluation/utils/keys/get_keys.py
 .DS_Store
 .env
+.pytest_cache/
+tests/
+.tmp_sheet/
+*.egg-info/
+build/
+dist/
+.venv/

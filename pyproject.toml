@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "guidedbench"
+dynamic = ["version"]
+description = "Guideline-grounded evaluation for LLM jailbreak methods"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+  {name = "Ruixuan Huang", email = "rhuangbi@connect.ust.hk"},
+  {name = "Xunguang Wang"},
+  {name = "Zongjie Li"},
+  {name = "Daoyuan Wu"},
+  {name = "Shuai Wang"},
+]
+keywords = ["llm", "jailbreak", "benchmark", "ai-safety", "evaluation"]
+dependencies = ["huggingface_hub>=0.27"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://sproutnan.github.io/GuidedBench/"
+Repository = "https://github.com/SproutNan/GuidedBench"
+Paper = "https://openreview.net/forum?id=ZVg8y3ibyM"
+Issues = "https://github.com/SproutNan/GuidedBench/issues"
+
+[project.optional-dependencies]
+openai = ["openai>=1.66.0"]
+anthropic = ["anthropic>=0.40"]
+local = ["accelerate>=0.26", "torch>=2.1", "transformers>=4.56.0"]
+all = [
+  "accelerate>=0.26",
+  "anthropic>=0.40",
+  "openai>=1.66.0",
+  "torch>=2.1",
+  "transformers>=4.56.0",
+]
+dev = ["build>=1.2", "twine>=5"]
+
+[project.scripts]
+guidedbench = "guidedbench.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "guidedbench._version.__version__"}
